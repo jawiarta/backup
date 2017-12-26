@@ -1,0 +1,30 @@
+
+    <template>
+        <require from="bootstrap/css/bootstrap.css"></require>
+        <require from="./styles.css"></require>
+        <require from="./data-user"></require>
+        <require from="./add-user"></require>
+
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              <i class="fa fa-user"></i>
+              <span>HOME</span>
+            </a>
+            <a class="navbar-brand" href="#users">
+                <i class="fa fa-user"></i>
+                <span>USERS</span>
+              </a>
+          </div>
+        </nav>
+  
+        <div class="container">
+          <div class="row">
+            <!-- <div class="col-md-4">User List Placeholder</div> -->
+            <!-- <data-user class="col-md-4"></data-user>
+            <add-user class="col-md-4"></add-user> -->
+            <router-view class="col-md-8"></router-view>
+          </div>
+        </div>
+      </template>
